@@ -13,4 +13,9 @@
   width: 100vw;
   align-items: center;
 }
+
+#bloc_hero_title {
+  display: bloc;
+  align-items: center;
+}
 /*Bloc_hero*/
