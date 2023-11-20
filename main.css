@@ -1,0 +1,16 @@
+/*main_background*/
+#main_background {
+  background-color: #ffff;
+  display: block;
+  width: 100vw;
+}
+/* fin_main_background*/
+
+/*Bloc_hero*/
+#bloc_hero {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+/*Bloc_hero*/
