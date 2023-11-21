@@ -1,0 +1,140 @@
+/*------------------------Global--------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+/*------------------------menu--------------------------------*/
+header {
+    background-color: rgb(25,25,25);
+    height: 100px;
+}
+
+/*------------------------Niveau 0--------------------------------*/
+.nav_niv0 {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60vw;
+    height: 100px;
+    margin: 0 auto;
+    padding:0;
+    place-items: center;
+    list-style: none;
+}
+.nav_niv0 > li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*------------------------Niveau 1--------------------------------*/
+.nav_niv1 {
+    display: block;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 100px;
+    color: white;
+}
+.nav_niv1 > li {
+    list-style: none;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+.nav_niv0 > li:first-child:hover, .nav_niv0 > li:last-child:hover {
+    background-color: rgb(40,40,40);
+    letter-spacing: 0.5em;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+/*------------------------Niveau 2--------------------------------*/
+.nav_niv2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    position: absolute;
+    top: 100;
+    left: -100vw;
+    padding: 0;
+    line-height: 70px;
+    width: 60vw;
+    height: 50px;
+    transition-duration: 350ms;
+    transition-property: all;
+}
+.nav_niv2 li {
+    letter-spacing: 0;
+    background-color: rgb(40,40,40);
+}
+.nav_niv2 li a {
+    text-decoration: none;
+    display:block;
+    color: white;
+    width: 100%;
+    height: 100%;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+.nav_niv1:hover .nav_niv2 {
+    top: 100px;
+    left: 20vw;
+    transition-duration: 350ms;
+    transition-property: all;
+}
+.nav_niv2 li a:hover {
+    background-color: rgb(65,65,65);
+    letter-spacing: 0.5em;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+.nav_niv1 > li > a > img{
+    height: 80px;
+    margin: 10px 0;
+    padding:0;
+}
+.nav_niv0 > li:nth-child(2n) ul li {
+    line-height: 0;
+    padding:0;
+    margin:0;
+}
+
+
+
+
+/*------------------------Mobile--------------------------------*/
+@media screen and (max-width: 1250px) and (orientation: portrait){
+    .nav_niv0 {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100vw;
+         margin: 0;
+    }
+    header {
+        height: 150px;
+    }
+    .nav_niv1 {
+        line-height: 50px;
+    }
+    .nav_niv2 {
+        width: 100vw;
+        height: 50px;
+        line-height: 50px;
+    }
+    .nav_niv1:hover .nav_niv2 {
+        top: 150px;
+        left: 0;
+    }
+    .nav_niv0 > li ul li {
+        height: 50px;
+        width: 100%;
+    }
+    .nav_niv0 > li:nth-child(2n) {
+        order: -5;
+        height: 100px;
+        grid-column: 1 / -1;
+    }
+
+}
