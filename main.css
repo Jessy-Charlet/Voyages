@@ -13,6 +13,9 @@ section {
 }
 /* reset */
 
+h1 {
+  padding: 10vw;
+}
 main {
   text-align: -webkit-center;
 }
@@ -32,27 +35,41 @@ main {
   flex-direction: column;
   width: 98 vw;
   align-items: center;
-}
-
-#bloc_hero_title {
-  display: flex;
-  align-items: baseline;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-#bloc_hero_title h1 {
-  margin: 0;
+  position: relative;
 }
 
 #bloc_hero_photo {
   display: inline;
   width: 98vw;
-  align-items: center;
+  position: relative;
   margin: 0;
   padding: 0;
   text-align: center;
 }
+#container_text {
+  /* *text-align: start; */
+  z-index: 1;
+  /*position: absolute;*/
+  top: 85%;
+  right: 60%;
+  background-image: url("./img/avion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 50vw;
+  /*background-position: ;*/
+}
+
+#container_text h1 {
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  opacity: 70%;
+  padding-top: 41vw;
+  padding-right: 45vw;
+  padding-left: 0;
+}
+
 #bloc_hero_photo img {
   width: 98vw;
   background-size: cover;
@@ -107,5 +124,18 @@ main {
   justify-items: center;
   align-items: center;
   font-size: 24px;
+}
+
+#choisir_pays_background h2,
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 2vw;
+}
+
+#choisir_pays_background a {
+  text-decoration: none;
+  color: black;
 }
 /*Bloc_pays*/
