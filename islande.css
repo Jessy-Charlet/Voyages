@@ -1,0 +1,359 @@
+html {
+    scroll-behavior: smooth;
+}
+.cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(./img/Islande/kirkjufell-montagne-pointe-de-flèche.png);
+    background-position: center top;
+    background-size: cover;
+    padding: 4vw 20vw;
+}
+.cover h1 {
+    grid-column: 1/2;
+    text-overflow: ellipsis;
+    font-family: 'Chau Philomene One', sans-serif;
+    padding: 0;
+    color: white;
+    text-align: right;
+    margin: 10vw 0 15vw 0;
+    font-size: 6em;
+    text-shadow: 0 0 10px rgb(0,0,0,0.5),
+    0 0 50px rgb(0,0,0,0.5);
+    animation: 0.5s ease-in titres;
+}
+.cover p {
+    display:block;
+    background-color: rgb(255,255,255,0.9);
+    grid-column: 1/3;
+    padding: 2em;
+    border-radius: 15px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------map intéractive------------------------------*/
+
+.map_interactive {
+    padding: 6vw 20vw;
+    background-image: url(./img/Islande/background-topographie.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.map_interactive > div {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.map_interactive img {
+    width: 60vw;
+}
+.map_acces {
+    text-decoration: none;
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(25,25,25);
+    border-radius: 15px;
+    color: white;
+    padding: 1vw;
+    font-family: 'Chau Philomene One', sans-serif;
+    transition-duration: 200ms;
+    transition-property: all;
+    line-height: 2em;
+    border: 2px dashed white;
+    animation: 1s ease-in infinite alternate-reverse mapacces;
+}
+@keyframes mapacces {
+    0% {
+      margin-bottom: 0;
+    }
+    20% {
+      margin-bottom: 20px;
+    }
+    40% {
+        margin-bottom: 0;
+      }
+  }
+@keyframes titres {
+    0% {
+      margin-top: -100%;
+    }
+    100% {
+      margin-top: 0;
+    }
+    
+  }
+  @keyframes mapliens {
+    0% {
+      padding-left: 0;
+    }
+    100% {
+      padding-left: 1em;
+    }
+}
+.map_acces:hover {
+    line-height: 6em;
+    background-color: white;
+    color: rgb(25,25,25);
+    border: 2px dashed black;
+    transition-duration: 200ms;
+    transition-property: all;
+    animation-play-state: paused;
+}
+.link_fagra, .link_reyk, .link_fagra,
+.link_reyk, .link_husa, .link_geysir,
+.link_detti, .link_solhei, .link_latrab {
+    text-decoration: none;
+    background-color: orange;
+    padding: 0.1em 0.3em;
+    border-radius: 5px;
+    color: black;
+    border: 2px dotted white;
+    transition-duration: 200ms;
+    transition-property: all;
+    font-family: 'Chau Philomene One', sans-serif;
+    animation: 1s ease-in infinite alternate-reverse mapliens;
+}
+.link_fagra:hover, .link_reyk:hover, .link_fagra:hover,
+.link_reyk:hover, .link_husa:hover, .link_geysir:hover,
+.link_detti:hover, .link_solhei:hover, .link_latrab:hover {
+    background-color: rgb(0,210,252);
+    color: white;
+    letter-spacing: 0.2em;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+.link_fagra {
+    position: absolute;
+    bottom: 18%;
+    left: 24%;
+}
+.link_reyk {
+    position: absolute;
+    bottom: 25%;
+    left: 27%;
+}
+.link_husa {
+    position: absolute;
+    top: 17%;
+    left: 67%;
+}
+.link_geysir {
+    position: absolute;
+    bottom: 30%;
+    left: 40.5%;
+}
+.link_detti {
+    position: absolute;
+    top: 27.5%;
+    left: 80%;
+}
+.link_solhei {
+    position: absolute;
+    bottom: 5.5%;
+    left: 50.5%;
+}
+.link_latrab {
+    position: absolute;
+    top: 29.5%;
+    left: 5.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------sections-----------------------------*/
+
+.fagradalsfjall, .reykjavik, .husavik, .geysir,
+.dettifoss, .solheimasandur, .latrabjarg {
+    padding: 4vw 20vw 10vw 20vw;
+    box-shadow: 0 0 300px 70px black;
+}
+.fagradalsfjall > article, .reykjavik > article,
+.husavik > article, .geysir > article,
+.dettifoss > article, .solheimasandur > article,
+.latrabjarg > article    {
+    display: block;
+    grid-column: 1/3;
+}
+.fagradalsfjall > article > p, .reykjavik > article > p,
+.husavik > article > p, .geysir > article > p,
+.dettifoss > article > p, .solheimasandur > article > p,
+.latrabjarg > article > p{
+    display: block;
+    background-color: rgb(255,255,255,0.9);
+    padding: 2em;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+}
+.fagradalsfjall > aside, .reykjavik > aside, 
+.husavik > aside, .geysir > aside,
+.dettifoss > aside, .solheimasandur > aside,
+.latrabjarg > aside {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    background-color: rgb(0,0,0,0.7);
+    padding: 2em;
+    margin: 0;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+}
+.fagradalsfjall > aside > img, .reykjavik > aside > img,
+.husavik > aside > img, .geysir > aside > img,
+.dettifoss > aside > img, .solheimasandur > aside > img,
+.latrabjarg > aside > img {
+    width: 100%;
+}
+.fagradalsfjall h1, .reykjavik h1, .husavik h1,
+.geysir h1, .dettifoss h1, .solheimasandur h1,
+.latrabjarg h1 {
+    font-family: 'Chau Philomene One', sans-serif;
+    padding: 0;
+    color: white;
+    text-align: center;
+    margin: 10vw 0 10vw 0;
+    font-size: 6em;
+    text-shadow: 0 0 10px rgb(0,0,0,0.5),
+    0 0 50px rgb(0,0,0,0.5);
+    animation: 0.5s ease-in titres;
+}
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+
+
+.reykjavik{
+    background-image: url(./img/Islande/reykjavik-raimbow-road.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.husavik {
+    background-image: url(./img/Islande/husavik-baleine.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.geysir {
+    background-image: url(./img/Islande/Geysir.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.dettifoss {
+    background-image: url(./img/Islande/dettifoss.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.solheimasandur {
+    background-image: url(./img/Islande/solheimasandur.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.latrabjarg {
+    background-image: url(./img/Islande/latrabjarg.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------visioneuse------------------------*/
+
+aside img:active:first-child, aside img:active:nth-child(2n), aside img:active:last-child {
+    grid-column: 1/-1;
+    order: -1;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------Mobile--------------------------------*/
+@media screen and (max-width: 1250px) and (orientation: portrait){
+    .cover, .fagradalsfjall, .reykjavik, .husavik, .geysir,
+    .dettifoss, .solheimasandur {
+        grid-template-columns: 1fr;
+        padding: 1em 0 0 0;
+    }
+    .cover h1, .fagradalsfjall h1, .reykjavik h1, .husavik h1, .geysir h1,
+    .dettifoss h1, .solheimasandur h1{
+        margin: 15vw 0 30vw 0;
+        text-align: center;
+        font-size: 5em;
+    }
+    .solheimasandur h1{
+        margin: 15vw 0 30vw 0;
+        text-align: center;
+        font-size: 4em;
+    }
+    .cover p, .fagradalsfjall > article > p, .fagradalsfjall > aside,
+    .reykjavik > article > p, .reykjavik > aside,
+    .husavik > article > p, .husavik > aside,
+    .geysir > article > p, .geysir > aside,
+    .dettifoss > article > p, .dettifoss > aside,
+    .solheimasandur > article > p, .solheimasandur > aside {
+        border-radius: 0;
+        padding: 1em;
+        gap: 0;
+    }
+    .fagradalsfjall > aside, .reykjavik > aside,
+    .husavik > aside, .geysir > aside,
+    .dettifoss > aside, .solheimasandur > aside {
+        grid-template-columns: 1fr;
+    }
+    aside img:active:first-child, aside img:active:nth-child(2n),
+    aside img:active:last-child {
+        order: initial;
+    }
+    .map_interactive {
+        padding: 5vw 0;
+    }
+    .map_acces:hover {
+        line-height: 2em;
+    }
+    .map_interactive img {
+        width: 100vw;
+    }
+  }
