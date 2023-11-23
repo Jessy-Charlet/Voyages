@@ -1,0 +1,135 @@
+/*Reset*/
+body,
+h2,
+h1,
+h3,
+img,
+p,
+ul,
+li,
+section {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*Reset*/
+
+/*body*/
+body {
+  display: block;
+  font-family: "Tajawal", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: black;
+  background-color: #ffffff;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+/*body*/
+
+/*--------------------HEADER---------------------*/
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/img_Portugal/mer-pont-elle-entoure-par-ville-coimbra-sous-ciel-nuageux-au-portugal.jpg);
+  background-size: cover;
+}
+/*--------------------NAV1---------------------*/
+
+.navbar1 {
+  position: absolute;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+.navbar1 a {
+  color: white;
+  text-decoration: none;
+}
+.navbar1 .logo {
+  font-size: 2em;
+  color: #57020291;
+  font-weight: 700;
+  font-size: 2em;
+}
+.navbar1 .nav-links ul {
+  display: flex;
+  align-items: center;
+}
+.navbar1 .nav-links {
+  display: flex;
+  align-items: center;
+}
+.navbar1 .nav-links ul li {
+  margin: 0 25px;
+}
+.navbar1 .nav-links ul li.active a {
+  color: #57020291;
+  font-weight: 600;
+}
+
+.navbar1 .menu-hamburger {
+  display: none;
+  position: absolute;
+  width: 35px;
+  top: 50px;
+  right: 50px;
+}
+
+/*media*/
+
+@media screen and (max-width: 900px) {
+  .navbar1 {
+    padding: 0;
+  }
+  .navbar1 .menu-hamburger {
+    display: block;
+  }
+
+  .navbar1 .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #b7b7f72d;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .navbar1 .mobile-menu {
+    margin-left: 0;
+  }
+  .navbar1 .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar1 .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+  .navbar1 .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+}
+
+/*--------------------Nav---------------------*/
+
+
+/*--------------------HEADER-FIN---------------------*/
