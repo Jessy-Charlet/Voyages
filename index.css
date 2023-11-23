@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.index_global {
+  display: grid;
+  background-color: rgb(25,25,25);
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.italie {
+  background-image: url(./img/italie.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.portugal {
+  background-image: url(./img/portugal.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.islande {
+  background-image: url(./img/Islande.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.home_h1 {
+  display: block;
+  line-height: 8vh;
+  width: 50%;
+  margin: auto;
+  font-size: 2em;
+  color: white;
+  margin-top: 70vh;
+  background-color: rgb(25,25,25);
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px) and (orientation: portrait) {
+  .index_global {
+    grid-template-columns: 1fr;
+  }
+  .home_h1 {
+    margin-top: 50vh;
+  }
+}
