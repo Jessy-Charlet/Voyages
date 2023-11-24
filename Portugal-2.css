@@ -11,7 +11,12 @@ section {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
+
 /*Reset*/
 
 /*body*/
@@ -27,16 +32,11 @@ body {
   background-color: #ffffff;
 }
 
-#page {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-}
 /*body*/
 
 /*--------------------HEADER---------------------*/
 header {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
   background-image: url(img/img_Portugal/mer-pont-elle-entoure-par-ville-coimbra-sous-ciel-nuageux-au-portugal.jpg);
   background-size: cover;
@@ -85,7 +85,167 @@ header {
   top: 50px;
   right: 50px;
 }
+/*--------------------NAV-FIN---------------------*/
 
+/*--------------------HEADER-FIN------------------*/
+
+/* --------------------Main----------------------- */
+.section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+h1,
+h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 40px;
+  color: #3606069f;
+}
+h3 {
+  justify-content: center;
+}
+
+.background_régions {
+  display: grid;
+  grid-template-columns: repeat(2, 45vw);
+  grid-template-rows: 1fr;
+  grid-gap: 8vw;
+  align-items: start;
+}
+
+.background_régions div img {
+  width: 50vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.background_régions p {
+  padding-top: 1em;
+}
+
+.background_1 .box_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 28vw);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3vw;
+  justify-content: center;
+  padding: 3vw;
+  background-color: #b3c6d537;
+}
+
+.background_1 .box_1 .box_2 img {
+  object-fit: cover;
+  width: 20vw;
+  height: auto;
+  width: -webkit-fill-available;
+}
+.background_1 .box_1 {
+  padding: 3vw;
+  background-color: #b3c6d583;
+}
+
+.background_1 .box_2 {
+  padding: 1em;
+}
+.background_1 .box_2 p {
+  padding-top: 1em;
+}
+.background_1 .box_2 {
+  background-color: #ffffff;
+}
+
+.background_2 .box_3 {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  grid-template-rows: 1fr;
+  grid-gap: 3vw;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.background_2 .box_3 .box_4 img {
+  object-fit: cover;
+  width: 20vw;
+  height: auto;
+  width: -webkit-fill-available;
+}
+
+.background_2 {
+  padding-bottom: 3em;
+}
+.background_2 .box_4 p, h3{
+  padding-top: 1em;
+}
+
+/* --------------------FOOTER----------------------- */
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-image: url(./img/img_Portugal/bar-fotter.jpg);
+  position: relative;
+  object-fit: cover;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.4;
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.row .col_item {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 12vw;
+}
+.row .col_item ul li {
+  display: inline-flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 1.5vw;
+}
+.row .col_item {
+  align-items: baseline;
+}
+
+/* --------------------FOOTER----------------------- */
 /*media*/
 
 @media screen and (max-width: 900px) {
@@ -130,6 +290,5 @@ header {
 }
 
 /*--------------------Nav---------------------*/
-
 
 /*--------------------HEADER-FIN---------------------*/

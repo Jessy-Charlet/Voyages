@@ -7,6 +7,7 @@
 }
 
 body {
+  min-width: 100vw;
   min-height: 100vh;
   background-image: url(./img/img_Portugal/mer-pont-elle-entoure-par-ville-coimbra-sous-ciel-nuageux-au-portugal.jpg);
   background-size: cover;
@@ -27,7 +28,7 @@ header {
 }
 header .logo {
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 20px;
   color: #B0C4DE;
 }
 header .navbar ul {
@@ -39,8 +40,8 @@ header .navbar ul li {
   font-weight: bold;
 }
 header .navbar ul li a {
-  font-size: 20px;
-  padding: 20px;
+  font-size: 14px;
+  padding: 15px;
   color: #B0C4DE;
   display: block;
 }
