@@ -12,19 +12,19 @@ body {
   text-align: center;
 }
 .italie {
-  background-image: url(./img/italie.jpg);
+  background-image: url(../img/italie.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
 }
 .portugal {
-  background-image: url(./img/portugal.jpg);
+  background-image: url(../img/portugal.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
 }
 .islande {
-  background-image: url(./img/Islande.jpg);
+  background-image: url(../img/Islande.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
