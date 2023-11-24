@@ -5,7 +5,7 @@ html {
 .cover {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url(./img/Islande/kirkjufell-montagne-pointe-de-flèche.png);
+    background-image: url(../img/Islande/kirkjufell-montagne-pointe-de-flèche.png);
     background-position: center top;
     background-size: cover;
     padding: 4vw 20vw;
@@ -56,10 +56,11 @@ strong {
 
 .map_interactive {
     padding: 6vw 20vw;
-    background-image: url(./img/Islande/background-topographie.png);
+    background-image: url(../img/Islande/background-topographie.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 .map_interactive > div {
     position: relative;
@@ -320,43 +321,43 @@ strong {
 
 
 .fagradalsfjall{
-    background-image: url(./img/Islande/fagradalsfjall.png);
+    background-image: url(../img/Islande/fagradalsfjall.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .reykjavik{
-    background-image: url(./img/Islande/reykjavik-raimbow-road.jpg);
+    background-image: url(../img/Islande/reykjavik-raimbow-road.jpg);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .husavik {
-    background-image: url(./img/Islande/husavik-baleine.png);
+    background-image: url(../img/Islande/husavik-baleine.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .geysir {
-    background-image: url(./img/Islande/Geysir.png);
+    background-image: url(../img/Islande/Geysir.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .dettifoss {
-    background-image: url(./img/Islande/dettifoss.png);
+    background-image: url(../img/Islande/dettifoss.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .solheimasandur {
-    background-image: url(./img/Islande/solheimasandur.png);
+    background-image: url(../img/Islande/solheimasandur.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .latrabjarg {
-    background-image: url(./img/Islande/latrabjarg.png);
+    background-image: url(../img/Islande/latrabjarg.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
