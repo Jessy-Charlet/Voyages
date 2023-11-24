@@ -35,16 +35,17 @@ body {
 /*body*/
 
 /*--------------------HEADER---------------------*/
-header {
-  width: 98vw;
+.menu2 {
+  width: 100vw;
   height: 100vh;
-  background-image: url(img/img_Portugal/mer-pont-elle-entoure-par-ville-coimbra-sous-ciel-nuageux-au-portugal.jpg);
+  z-index: 0;
+  background-image: url(../img/img_Portugal/mer-pont-elle-entoure-par-ville-coimbra-sous-ciel-nuageux-au-portugal.jpg);
   background-size: cover;
 }
 /*--------------------NAV1---------------------*/
 
 .navbar1 {
-  position: absolute;
+  position: relative;
   padding: 50px;
   display: flex;
   justify-content: space-between;
@@ -180,7 +181,7 @@ h3 {
 .footer-dark {
   padding: 50px 0;
   color: #f0f9ff;
-  background-image: url(./img/img_Portugal/bar-fotter.jpg);
+  background-image: url(../img/img_Portugal/bar-fotter.jpg);
   position: relative;
   object-fit: cover;
 }
