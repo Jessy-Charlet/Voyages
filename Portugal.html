@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./Portugal.css" />
+    <link rel="stylesheet" href="./css/portugal.css" />
+    <link rel="stylesheet" href="./css/voyages.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,46 +14,396 @@
     />
   </head>
   <body>
-    <header>
-      <a href="./Portugal.html" class="logo">PORTUGAL</a>
-      <input type="checkbox" id="menu-bar" />
-      <label for="menu-bar">Menu</label>
-      <nav class="navbar">
-        <!-- <div class="nav-links"> -->
-        <ul>
-          <li class="active"><a href=".//index.html">Main</a></li>
-          <li>
-            <a href="#">Pays</a>
-            <ul class="sub-menu">
-              <li><a href="./italie.html">Italie</a></li>
-              <li><a href="./islande.html">Islande</a></li>
-              <li><a href="./Portugal-2.html">Portugal</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Notre équipe</a>
-            <ul>
-              <li><a href="italie.html">Maxence</a></li>
-              <li><a href="./islande.html">Jessy</a></li>
-              <li><a href="./Portugal-2.html">Alina</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="./Portugal-2.html">Decouvrir le Portugal</a>
-            <ul>
-              <li><a href="#">Portugal et ses régions</a></li>
-              <li><a href="#">Que voir au Portugal</a></li>
-              <li><a href="#">Que faire au Portugal</a></li>
-              <li><a href="#">Actualités</a></li>
-            </ul>
-          </li>
-        </ul>
-        <!-- </div> -->
-      </nav>
-
+    <!--header-->
+    <header class="menu">
+          <nav>
+              <ul class="nav_niv0">
+                  <li>
+                      <ul class="nav_niv1">
+                          <li>
+                              Destination
+                              <ul class="nav_niv2">
+                                  <li>
+                                      <a href="portugal.html" alt="Voyage au Portugal">Portugal</a>
+                                  </li>
+                                  <li>
+                                      <a href="italie.html" alt="Voyage en Italie">Italie</a>
+                                  </li>
+                                  <li>
+                                      <a href="islande.html" alt="Voyage en Islande">Islande</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <ul class="nav_niv1">
+                          <li><a href="index.html" alt="Accueil World Trip"><img src="./logo-world-trip.png" alt="Logo World trip"></a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <ul class="nav_niv1">
+                          <li>
+                              L'équipe
+                              <ul class="nav_niv2">
+                                  <li>
+                                      <a href="portugal.html" alt="Voyage d'Alina">Alina</a>
+                                  </li>
+                                  <li>
+                                      <a href="italie.html" alt="Voyage de Maxence">Maxence</a>
+                                  </li>
+                                  <li>
+                                      <a href="islande.html" alt="Voyage de Jessy">Jessy</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
     </header>
+    <header class="menu2">
+      <nav class="navbar1">
+        <a href="./portugal.html" class="logo">PORTUGAL</a>
+        <div class="nav-links">
+          <ul>
+            <li class="active"><a href="#reg">Portugal et ses régions</a></li>
+            <li><a href="#tosee">Que voir au Portugal</a></li>
+            <li><a href="#activities">Que faire au Portugal</a></li>
+            <li><a href="#news">Actualités</a></li>
+          </ul>
+        </div>
+        <img
+          src="./img/img_Portugal/menu-icon.svg"
+          alt="icon-menu"
+          class="menu-hamburger"
+        />
+      </nav>
+    </header>
+    <!--header-->
+
     <main>
-      
+      <section id="Portugal_et_régions">
+        <a id="reg"></a>
+        <h1>Portugal et ses régions</h1>
+        <div class="background_régions">
+          <div class="background_régions_img">
+            <img src="./img/img_Portugal/OGF9TI0.jpg" alt="map portugal" />
+          </div>
+          <div class="background_régions_text">
+            <p>
+              Porto et le Nord : Porto, Braga, Guimaraes … le nord du Portugal
+              est considéré comme le berceau de l’identité portugaise.
+            </p>
+            <p>
+              Lisbonne et sa région : Si on devait résumer Lisbonne, ça serait «
+              bon vivre ». Découvrez Lisbonne et sa région, les plages, la
+              culture locale, la gastronomie … Incontournable !
+            </p>
+            <p>
+              Région Centre du Portugal : Aveiro, Coimbra, la Serre de Estrela,
+              le centre du Portugal est une destination incontournable pour les
+              amateurs de culture et de nature.
+            </p>
+            <p>
+              Alentejo : Nichée entre Lisbonne et l’Espagne, l’Alentejo offre un
+              mélange parfait entre tradition et modernité. Vastes plaines,
+              villages pittoresques, plages incroyables
+            </p>
+            <p>
+              Algarve : L’Algarve est très prisée par les touristes recherchant
+              les plages à perte de vue, le soleil, une cuisine typique et
+              savoureuse. Mais l’Algarve c’est bien plus que cela
+            </p>
+            <p>
+              Madères et les Açores : Les archipels de Madère et les Açores,
+              bien qu’éloignés, font partie intégrante de la culture locale. Ce
+              sont des perles à découvrir sans attendre !
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Que_voir">
+        <a id="tosee"></a>
+        <div><h2>Que voir au Portugal</h2></div>
+        <div class="background_1">
+          <div class="box_1">
+            <div class="box_2">
+              <img src="./img/img_Portugal/photo.1547776.w630.jpg" alt="" />
+              <h3>Découvrir 3 sites en Algarve</h3>
+
+              <p>
+                Située à l’extrémité sud-ouest de la péninsule Ibérique,
+                l’Algarve est l’une des régions les plus connues du Portugal.
+                Gorgée de soleil toute l’année, l’Algarve est devenue l’une des
+                Mecque européennes du tourisme balnéaire. En été, les touristes
+                débarquent en masse sur la côte sud, près de Faro, dans des
+                hôtels clubs et des plages surpeuplées.
+              </p>
+            </div>
+
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/parc_naturel_Peneda-Gerês.jpg"
+                alt=""
+              />
+              <h3>Parc National Peneda-Gerês</h3>
+              <p>
+                Le Parc National de Peneda-Gerês est l’un des plus anciens parcs
+                nationaux du Portugal, créé en 1971. Situé dans la région nord
+                du pays, il s’étend sur plus de 70 000 hectares de montagnes,
+                vallées et rivières. Le parc tire son nom des deux chaînes de
+                montagnes principales qui le traversent, la Serra da Peneda et
+                la Serra do Gerês.
+              </p>
+            </div>
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Monastère_des_Hiéronymites.jpg"
+                alt=""
+              />
+              <h3>Monastère des Hiéronymites</h3>
+              <p>
+                Mosteiro dos Jerónimos Monastère des Hiéronymites Au cœur de
+                Lisbonne, à Belém, le Monastère des Hiéronymites (Mosteiro dos
+                Jerónimos) se dresse comme un monument incontournable, un
+                symbole de la grandeur historique et culturelle de la capitale
+                portugaise. Ce chef-d’œuvre de l’architecture manuéline, classé
+                au patrimoine mondial.
+              </p>
+            </div>
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/L’océanarium_de_Lisbonne.jpg"
+                alt=""
+              />
+              <h3>L’océanarium de Lisbonne</h3>
+              <p>
+                Aquarium lisbon L’océanarium de Lisbonne L’océanarium de
+                Lisbonne est le 2ème plus grand aquarium d’Europe, il a été
+                construit en 1998 à l’occasion de l’Exposition Universelle de
+                Lisbonne, par Peter Chermayeff, architecte reconnu pour ses
+                précédentes réalisations dans le domaine aquatique.
+              </p>
+            </div>
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Palais_des_Ducs_de_Bragance.jpg"
+                alt=""
+              />
+              <h3>Palais des Ducs de Bragance à Guimarães</h3>
+              <p>
+                Guimaraes palais des ducs de Bragance Palais des Ducs de
+                Bragance à Guimarães Au cœur de la ville historique de
+                Guimarães, un joyau architectural se dresse, témoignant de la
+                grandeur passée du Portugal médiéval : le Palais des Ducs de
+                Bragance (Paço dos Duques de Bragança).
+              </p>
+            </div>
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Centre_Portugais_de_la_Photographie_de_Porto.jpg"
+                alt=""
+              />
+              <h3>Centre Portugais de la Photographie de Porto</h3>
+              <p>
+                A la fin des années 1980, la culture photographique commençait à
+                être ravivée par l’apparition d’écoles de photographie, de
+                festivals et de galeries qui récupéraient les photographes «
+                maudits » ou éloignés sous le régime de Salazar et diffusaient
+                le travail d’importants photographes internationaux.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Que_faire">
+        <a id="activities"></a>
+        <h2>Que faire au Portugal</h2>
+        <div class="background_1">
+          <div class="box_1">
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Pêcher_en_mer_au_Portuga.jpg"
+                alt=""
+              />
+              <h3>Pêcher en mer au Portugal</h3>
+              <p>
+                Pecher en mer au Portugal Pêcher en mer au Portugal Au Portugal
+                la pêche, qu’elle soit en eau de mer ou en eau douce, est très
+                répandue. Cela-dit vous êtes très nombreux à nous écrire pour
+                nous demander comment obtenir une licence de pêche, appelée
+                licença de pesca ludica.
+              </p>
+            </div>
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Plongée_aux_Acores_à_Picojpg.jpg"
+                alt=""
+              />
+              <h3>Plongée à Furna de Santo António</h3>
+              <p>
+                Si vous êtes passionné de plongée sous-marine et que vous
+                recherchez un lieu unique pour explorer les fonds marins, ne
+                cherchez plus ! La Furna de Santo António, située sur l’île de
+                Pico aux Açores,
+              </p>
+            </div>
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Plongée_aux_Acores_à_Picojpg.jpg"
+                alt=""
+              />
+              <h3>Visite des caves à Porto</h3>
+              <p>
+                Le Portugal est reconnu mondialement pour la qualité de ses
+                vins, et notamment le célèbre vin de Porto. Au cours d’un séjour
+                dans cette belle ville, il serait dommage de ne pas profiter de
+                l’occasion pour visiter les caves où sont élaborés ces précieux
+                breuvages.
+              </p>
+            </div>
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Faire_du_surf_au_Portugal.jpg"
+                alt=""
+              />
+              <h3>Faire du surf au Portugal</h3>
+              <p>
+                Une des activités principales pour nombre de voyageurs qui
+                visitent le Portugal, c’est le surf. Avec ses conditions
+                météorologiques exceptionnelles et la variété des spots offerts,
+                le Portugal est une destination idéale pour un surfeur à la
+                recherche d’un lieu.
+              </p>
+            </div>
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Jouer_au_golf_à_Lisbonne.jpg"
+                alt=""
+              />
+              <h3>Jouer au golf à Lisbonne</h3>
+              <p>
+                Vous êtes en visite en Lisbonne et souhaitez jouer au golf ?
+                Vous êtes au bon endroit, ici vous allez trouver toutes les
+                informations nécessaires. Lisbonne est véritablement une
+                destination de choix pour les golfeurs, et ce n’est pas un
+                hasard si la côte lisboète a été élue « meilleure destination de
+                Golf d’Europe.
+              </p>
+            </div>
+
+            <div class="box_2">
+              <img
+                src="./img/img_Portugal/Les_joyaux_cachés_de_Porto.jpg"
+                alt=""
+              />
+              <h3>Les joyaux cachés de Porto</h3>
+              <p>
+                Imaginez-vous déambuler dans les ruelles sinueuses de Porto, une
+                ville où chaque coin de rue semble raconter une histoire. Vous
+                êtes sur le point de découvrir non seulement les charmes
+                extérieurs de cette cité portugaise, mais aussi les trésors
+                cachés qui se trouvent derrière les façades de ses édifices
+                emblématiques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="actualités">
+        <a id="news"></a>
+        <h2>Actualités</h2>
+        <div class="background_2">
+          <div class="box_3">
+            <div class="box_4">
+              <img src="./img/img_Portugal/2714675.jpg" alt="" />
+              <h3>Explosion du tourisme au Portugal</h3>
+              <p>
+                Si l’année 2013 a été la meilleure pour le tourisme au Portugal,
+                il semblerait que 2014 puise être encore meilleure, illustrant
+                la réussite du plan marketing de l’agence du tourisme nationale.
+              </p>
+            </div>
+            <div class="box_4">
+              <img
+                src="./img/img_Portugal/2a21ed03-82c5-4976-9203-35737f7b0b84.jpg"
+                alt=""
+              />
+              <h3>Qui sont les surfeurs portugais célèbres?</h3>
+              <p>
+                Le Portugal, avec ses côtes spectaculaires et ses vagues
+                légendaires, est un joyau dans l’univers du surf. En ce moment,
+                les regards du monde du surf sont rivés sur le Big Wave
+                Challenge de Nazaré, un événement qui rassemble les meilleurs
+                talents du surf de grosses vagues.
+              </p>
+            </div>
+            <div class="box_4">
+              <img
+                src="./img/img_Portugal/e596b19f-fb7e-4579-b6e1-13f136e9b9be.jpg"
+                alt=""
+              />
+              <h3>2030 : Le Portugal a sa Coupe du Monde</h3>
+              <p>
+                La nouvelle est tombée et elle est historique : le Portugal sera
+                l’un des pays hôtes de la Coupe du Monde de la FIFA en 2030.
+                Après une candidature conjointe avec l’Espagne et le Maroc, la
+                FIFA a donné son feu vert pour une compétition qui promet d’être
+                inoubliable.
+              </p>
+            </div>
+            <div class="box_4">
+              <img src="./img/img_Portugal/uckpy5b7k4o-1536x1025.jpg" alt="" />
+              <h3>25€ de remise sur votre location au Portugal</h3>
+              <p>
+                airbnb Portugal 25€ de remise sur votre location au Portugal
+                Nous avons le plaisir de vous offrir un coupon de réduction de
+                25 euros sur votre prochaine location au Portugal ou ailleurs
+                sur le site de location d’hébergements Airbnb.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col_item">
+              <h3>Nos Prénoms</h3>
+              <ul>
+                <li><a href="./islande.html">Jessy</a></li>
+                <li><a href="#">Maxence</a></li>
+                <li><a href="./Portugal-1.css">Alina</a></li>
+              </ul>
+            </div>
+            <div class="col_item">
+              <h3>Nos Voyages</h3>
+              <ul>
+                <li><a href="./islande.html">Islande</a></li>
+                <li><a href="./italie.html">Itatalie</a></li>
+                <li><a href="./portugal.html">Portugal</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright">Voyage 2023</p>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuHamburger.addEventListener("click", () => {
+      //alert("toggle");
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
 </html>
