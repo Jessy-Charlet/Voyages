@@ -1,10 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
+
 .cover {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url(./img/Islande/kirkjufell-montagne-pointe-de-flèche.png);
+    background-image: url(../img/Islande/kirkjufell-montagne-pointe-de-flèche.png);
     background-position: center top;
     background-size: cover;
     padding: 4vw 20vw;
@@ -32,6 +33,17 @@ html {
 }
 
 
+.italic {
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(0,100,140);
+}
+strong {
+    color: rgb(0,100,140);
+    background-color: rgb(200,230,240);
+    padding: 0.2em 0.5em;
+}
+
 
 
 
@@ -44,10 +56,11 @@ html {
 
 .map_interactive {
     padding: 6vw 20vw;
-    background-image: url(./img/Islande/background-topographie.png);
+    background-image: url(../img/Islande/background-topographie.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 .map_interactive > div {
     position: relative;
@@ -87,10 +100,10 @@ html {
   }
 @keyframes titres {
     0% {
-      margin-top: -100%;
+        margin: 0 0 0 0;
     }
     100% {
-      margin-top: 0;
+        margin: 10vw 0 15vw 0;
     }
     
   }
@@ -138,38 +151,92 @@ html {
     position: absolute;
     bottom: 18%;
     left: 24%;
+    z-index: 100;
 }
 .link_reyk {
     position: absolute;
     bottom: 25%;
     left: 27%;
+    z-index: 100;
 }
 .link_husa {
     position: absolute;
     top: 17%;
     left: 67%;
+    z-index: 100;
 }
 .link_geysir {
     position: absolute;
     bottom: 30%;
     left: 40.5%;
+    z-index: 100;
 }
 .link_detti {
     position: absolute;
     top: 27.5%;
     left: 80%;
+    z-index: 100;
 }
 .link_solhei {
     position: absolute;
     bottom: 5.5%;
     left: 50.5%;
+    z-index: 100;
 }
 .link_latrab {
     position: absolute;
     top: 29.5%;
     left: 5.5%;
+    z-index: 100;
 }
-
+.vagues {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: 3s ease-in infinite alternate-reverse mapvagues;
+}
+@keyframes mapvagues {
+    0% {
+    top: 1.5%;
+    }
+    40% {
+    left: 1.5%;
+      }
+    100% {
+    left: -1.5%;
+    }
+}
+.drakars {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: 3s ease-in infinite alternate-reverse mapdrakars;
+}
+@keyframes mapdrakars {
+    0% {
+    top: -1%;
+    }
+    60% {
+    left: -1%;
+      }
+    100% {
+    left: 1%;
+    }
+}
+.puffin {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: 1s ease-in infinite alternate-reverse mappuffin;
+}
+@keyframes mappuffin {
+    0% {
+    top: 1%;
+    }
+    100% {
+    top: -1%;
+    }
+}
 
 
 
@@ -187,14 +254,14 @@ html {
     padding: 4vw 20vw 10vw 20vw;
     box-shadow: 0 0 300px 70px black;
 }
-.fagradalsfjall > article, .reykjavik > article,
+.reykjavik > article,
 .husavik > article, .geysir > article,
 .dettifoss > article, .solheimasandur > article,
 .latrabjarg > article    {
-    display: block;
     grid-column: 1/3;
+    display: block;
 }
-.fagradalsfjall > article > p, .reykjavik > article > p,
+.reykjavik > article > p,
 .husavik > article > p, .geysir > article > p,
 .dettifoss > article > p, .solheimasandur > article > p,
 .latrabjarg > article > p{
@@ -237,51 +304,60 @@ html {
     0 0 50px rgb(0,0,0,0.5);
     animation: 0.5s ease-in titres;
 }
-#background-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    }
+.fagradalsfjall > article {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(255,255,255,0.9);
+    padding: 2em;
+    margin: 0;
+    gap: 2em;
+    border-radius: 15px 15px 0 0;
+}
+.fagradalsfjall > article video {
+    width: 100%;
+    border-radius: 15px;
+}
 
 
+.fagradalsfjall{
+    background-image: url(../img/Islande/fagradalsfjall.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .reykjavik{
-    background-image: url(./img/Islande/reykjavik-raimbow-road.jpg);
+    background-image: url(../img/Islande/reykjavik-raimbow-road.jpg);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .husavik {
-    background-image: url(./img/Islande/husavik-baleine.png);
+    background-image: url(../img/Islande/husavik-baleine.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .geysir {
-    background-image: url(./img/Islande/Geysir.png);
+    background-image: url(../img/Islande/Geysir.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .dettifoss {
-    background-image: url(./img/Islande/dettifoss.png);
+    background-image: url(../img/Islande/dettifoss.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .solheimasandur {
-    background-image: url(./img/Islande/solheimasandur.png);
+    background-image: url(../img/Islande/solheimasandur.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 .latrabjarg {
-    background-image: url(./img/Islande/latrabjarg.png);
+    background-image: url(../img/Islande/latrabjarg.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
@@ -311,36 +387,41 @@ aside img:active:first-child, aside img:active:nth-child(2n), aside img:active:l
 
 
 /*------------------------Mobile--------------------------------*/
-@media screen and (max-width: 1250px) and (orientation: portrait){
+@media screen and (max-width: 1250px) and (orientation: portrait) {
     .cover, .fagradalsfjall, .reykjavik, .husavik, .geysir,
-    .dettifoss, .solheimasandur {
+    .dettifoss, .solheimasandur, .latrabjarg {
         grid-template-columns: 1fr;
         padding: 1em 0 0 0;
     }
     .cover h1, .fagradalsfjall h1, .reykjavik h1, .husavik h1, .geysir h1,
-    .dettifoss h1, .solheimasandur h1{
-        margin: 15vw 0 30vw 0;
+    .dettifoss h1, .solheimasandur h1, .latrabjarg h1 {
+        margin: 35vw 0 50vw 0;
         text-align: center;
         font-size: 5em;
     }
-    .solheimasandur h1{
-        margin: 15vw 0 30vw 0;
+    .solheimasandur h1 {
+        margin: 35vw 0 50vw 0;
         text-align: center;
         font-size: 4em;
     }
-    .cover p, .fagradalsfjall > article > p, .fagradalsfjall > aside,
+    .fagradalsfjall > article {
+        grid-template-columns: 1fr;
+    }
+    .cover p, .fagradalsfjall > article, .fagradalsfjall > aside,
     .reykjavik > article > p, .reykjavik > aside,
     .husavik > article > p, .husavik > aside,
     .geysir > article > p, .geysir > aside,
     .dettifoss > article > p, .dettifoss > aside,
-    .solheimasandur > article > p, .solheimasandur > aside {
+    .solheimasandur > article > p, .solheimasandur > aside,
+    .latrabjarg > article > p, .latrabjarg > aside {
         border-radius: 0;
         padding: 1em;
         gap: 0;
     }
     .fagradalsfjall > aside, .reykjavik > aside,
     .husavik > aside, .geysir > aside,
-    .dettifoss > aside, .solheimasandur > aside {
+    .dettifoss > aside, .solheimasandur > aside,
+    .latrabjarg > aside {
         grid-template-columns: 1fr;
     }
     aside img:active:first-child, aside img:active:nth-child(2n),
@@ -355,5 +436,17 @@ aside img:active:first-child, aside img:active:nth-child(2n), aside img:active:l
     }
     .map_interactive img {
         width: 100vw;
+    }
+    .link_fagra {
+        bottom: 12%;
+        left: 24%;
+    }
+    .link_reyk {
+        bottom: 22.5%;
+        left: 27%;
+    }
+    .link_geysir {
+        bottom: 32%;
+        left: 40.5%;
     }
   }
